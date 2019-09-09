@@ -1,9 +1,12 @@
-<div class="container">
-  <a href="" class="navbar-brand"><div *ngIf="router != 'home'">Ricardo Tillemans</div> </a>
-  <ul class="mr-auto"></ul>
-  <div class="nav-wrapper">
-    <a href="tel:+31631685188" class="btn btn-primary btn-contact"><i class="fas fa-phone-alt"></i> Neem contact op</a>
+<nav class="navbar">
+  <div class="container">
+    <a href="" class="navbar-brand"><div *ngIf="router != '/'">Ricardo Tillemans</div> </a>
+    <ul class="mr-auto"></ul>
+    <div class="nav-wrapper">
+      <a href="mailto:ricardotillemans@outlook.com" class="btn btn-primary btn-contact"><i class="fas fa-envelope mr-1"></i> Neem contact op</a>
+      <button class="navbar-toggler px-3 px-sm-4 collapsed align-middle"><i class="fas fa-bars"></i></button>
+    </div>
   </div>
-</div>
+</nav>
+<div class="container"><router-outlet></router-outlet></div>
 
-<router-outlet></router-outlet>
